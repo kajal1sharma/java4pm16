@@ -7,13 +7,15 @@ public class Loop {
 
         // initialization;condition;updation
         for(int i=0;i<5;i=i+1){
+            System.out.println("enter the first number");
             int a=sc.nextInt();
+            System.out.println("Enter the second number");
             int b=sc.nextInt();
             int sum = a+b;
-            System.out.println(sum);
+            System.out.println("the sum is : " +sum);
         }
 
-        
+
 
 
         // int a;
