@@ -2,6 +2,43 @@ import java.util.Scanner;
 public class Loop {
     public static void main(String[] args) {
        
+        //initialization
+            // while(condition){//condiiton => true (loop works)
+                //value updation
+            // }
+
+
+            //if 10 numbers have to be printed
+            //67 prime number => prime divisible by 1 and itself
+
+            int counter=0;
+            int divisor=2;
+
+            while(divisor<67){
+
+                if(67%divisor==0){
+                    counter=counter+1;
+                }
+
+                divisor=divisor+1;
+            }
+
+            if(counter>0){
+                System.out.println("67 is not prime");
+            }
+            else{
+                System.out.println("67 is prime");
+
+            }
+            // int i=51;    
+            // while(i<=60){
+
+            //     System.out.println(i+"  this is a number");
+
+            //     i=i+1;
+            // }
+
+
        // Scanner sc = new Scanner(System.in);
 
        //if you want to terminate or break the loop from inside the looop use break;
@@ -14,19 +51,28 @@ public class Loop {
     //     }
         //print 5 such numbers which are divisible by 3 and 5 and 7
 
-        int counter =0;
+        // int counter =0;
 
-        for(int i=1;true;i=i+1)
-        {
-             if(i%3==0 &&  i%5==0 && i%7==0){
-                System.out.println(i);
-                counter =counter +1;
-                if(counter==5){
-                    break;
-                }
-             }
-        }
+        // for(int i=1;true;i=i+1)
+        // {
+        //      if(i%3==0 &&  i%5==0 && i%7==0){
+        //         System.out.println(i);
+        //         counter =counter +1;
+        //         if(counter==5){
+        //             break;
+        //         }
+        //      }
+        // }
 
+       // continue => move to the next iteraration
+        // for(int i=1;i<50;i=i+1){
+        //     if(i%3==0 && i%5==0){
+        //         continue;
+        //     }
+        //     // int a=90;
+        //     // i=i+56;
+        //     System.out.println(i+2);
+        // }
 
         //1-100
         //3 and  5 and  7 divide =>print that number 
