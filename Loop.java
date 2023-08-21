@@ -2,7 +2,45 @@ import java.util.Scanner;
 public class Loop {
     public static void main(String[] args) {
        
-        Scanner sc = new Scanner(System.in);
+       // Scanner sc = new Scanner(System.in);
+
+       //if you want to terminate or break the loop from inside the looop use break;
+    //    for(int  i=1;true;i=i+1)
+    //     {
+    //         if(i%3==0 &&  i%5==0 && i%7==0){
+    //             System.out.println(i);
+    //             break;
+    //         }
+    //     }
+        //print 5 such numbers which are divisible by 3 and 5 and 7
+
+        int counter =0;
+
+        for(int i=1;true;i=i+1)
+        {
+             if(i%3==0 &&  i%5==0 && i%7==0){
+                System.out.println(i);
+                counter =counter +1;
+                if(counter==5){
+                    break;
+                }
+             }
+        }
+
+
+        //1-100
+        //3 and  5 and  7 divide =>print that number 
+
+        // for(int i=1;i<=100;i=i+1){
+        //     if(i%3==0 && i%5==0){
+        //         System.out.println(i);
+        //     }
+        // }
+
+
+
+
+
 
 
         // initialization;condition;updation
@@ -11,8 +49,9 @@ public class Loop {
         //     System.out.println("Hello world");
         // }
         
-        String str = "one"+"two"+12;
-        System.out.println(str);
+        // String str = "one"+"two"+12;
+        // System.out.println(str);
+
         
         // for(int i =17 ; i<=170;i=i+17){
         //     System.out.println(i);
