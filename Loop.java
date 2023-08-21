@@ -11,12 +11,15 @@ public class Loop {
             //if 10 numbers have to be printed
             //67 prime number => prime divisible by 1 and itself
 
+
+            // for(int i=2;i<=100;i=i+1){
+            int num=i;
             int counter=0;
             int divisor=2;
 
-            while(divisor<67){
+            while(divisor<num){
 
-                if(67%divisor==0){
+                if(num%divisor==0){
                     counter=counter+1;
                 }
 
@@ -24,12 +27,13 @@ public class Loop {
             }
 
             if(counter>0){
-                System.out.println("67 is not prime");
+                System.out.println(num+" is not prime");
             }
             else{
-                System.out.println("67 is prime");
+                System.out.println(num+"is prime");
 
             }
+        }
             // int i=51;    
             // while(i<=60){
 
