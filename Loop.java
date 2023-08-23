@@ -1,7 +1,42 @@
-import java.util.Scanner;
 public class Loop {
     public static void main(String[] args) {
        
+
+
+        int  i=0;
+        do{//code will run first and then condition will be checked
+           System.out.println("do-while"+i);
+            i=i+1;
+        }while(i<-1);
+
+
+        i=0;
+        while(i<-1){
+            //so something
+             System.out.println("while"+i);
+             i=i+1;
+        }
+
+        // int num=87;
+        // int counter = 0;
+
+        // for(int i=2;i<=86;i=i+1){
+        //     if(num%i==0){
+        //         counter=counter+1;
+        //     }
+
+        // }
+        // if(counter>0){
+        //     System.out.println("the number is not prime");
+        // }
+        // else if(counter==0){
+        //     System.out.println("the number is prime");
+        // }
+
+
+        // 2-86
+        // 87/2, 87/3, 87/4, 87/5, 87/6, 87/7, ,..........87/86
+
         //initialization
             // while(condition){//condiiton => true (loop works)
                 //value updation
@@ -12,28 +47,28 @@ public class Loop {
             //67 prime number => prime divisible by 1 and itself
 
 
-            // for(int i=2;i<=100;i=i+1){
-            int num=i;
-            int counter=0;
-            int divisor=2;
+        //     for(int i=2;i<=100;i=i+1){
+        //     int num=i;
+        //     int counter=0;
+        //     int divisor=2;
 
-            while(divisor<num){
+        //     while(divisor<num){
 
-                if(num%divisor==0){
-                    counter=counter+1;
-                }
+        //         if(num%divisor==0){
+        //             counter=counter+1;
+        //         }
 
-                divisor=divisor+1;
-            }
+        //         divisor=divisor+1;
+        //     }
 
-            if(counter>0){
-                System.out.println(num+" is not prime");
-            }
-            else{
-                System.out.println(num+"is prime");
+        //     if(counter>0){
+        //         System.out.println(num+" is not prime");
+        //     }
+        //     else{
+        //         System.out.println(num+"is prime");
 
-            }
-        }
+        //     }
+        // }
             // int i=51;    
             // while(i<=60){
 
