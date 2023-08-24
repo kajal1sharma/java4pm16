@@ -19,7 +19,8 @@ public class Switch {
         //calculator
 
         //+,-,*,/
-
+        for(;true;){
+    
         System.out.println("user give some input => +,-,*,/");
         char ch = sc.next().charAt(0);
 
@@ -28,7 +29,7 @@ public class Switch {
         a=sc.nextInt();
         System.out.println("Enter the second number");
         b=sc.nextInt();
-        
+
         switch(ch){
             case '+':
                      int sum = a+b;
@@ -50,6 +51,16 @@ public class Switch {
             default :System.out.println("Wrong input");
         }
 
+        System.out.println("Do you want to continue(1) 0r (0)to exit");
+        int choice = sc.nextInt();
+        if(choice ==1){
+            continue;
+        }
+        else if(choice ==0) {
+            break;
+        }
+
+    }
         // switch(day-1+2){
         //     case 1:System.out.println("Monday");
         //             break;
