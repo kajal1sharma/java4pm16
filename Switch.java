@@ -2,6 +2,35 @@ import java.util.Scanner;
 
 public class Switch {
     public static void main(String[] args) {
+
+
+
+        //rows first for loop 
+
+        Scanner sc= new Scanner(System.in);
+        int row = sc.nextInt();
+        for(int i=0;i<row;i=i+1){
+//second loop is for star printing
+            for(int j=0;j<=i;j=j+1){
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+
+
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+
+        // for(int i=0;i<n;i++ ){
+        //     for(int j=0;j<n;j++){
+
+        //         System.out.print("A");
+        //     }
+        //     System.out.println();
+        // }
+        
+
         //1-Monday
         //2->Tuesday
         //3=>Wednesday
@@ -11,56 +40,57 @@ public class Switch {
         //7=>Sunday
         //loop logic 
 
-        Scanner sc = new Scanner(System.in);
-        // int day= sc.nextInt();
+    //     Scanner sc = new Scanner(System.in);
+    //     // int day= sc.nextInt();
 
 
 
-        //calculator
+    //     //calculator
 
-        //+,-,*,/
-        for(;true;){
+    //     //+,-,*,/
+    //     for(;true;){
     
-        System.out.println("user give some input => +,-,*,/");
-        char ch = sc.next().charAt(0);
+    //     System.out.println("user give some input => +,-,*,/");
+    //     char ch = sc.next().charAt(0);
 
-        int a, b;
-        System.out.println("Enter first number");
-        a=sc.nextInt();
-        System.out.println("Enter the second number");
-        b=sc.nextInt();
+    //     int a, b;
+    //     System.out.println("Enter first number");
+    //     a=sc.nextInt();
+    //     System.out.println("Enter the second number");
+    //     b=sc.nextInt();
 
-        switch(ch){
-            case '+':
-                     int sum = a+b;
-                     System.out.println(sum);
-                     break;
-            case '-':
-                     int diff = a-b;
-                     System.out.println(diff);
-                     break;
-            case '/':
-                     int div = a/b;
-                     System.out.println(div);
-                     break;
+    //     switch(ch){
+    //         case '+':
+    //                  int sum = a+b;
+    //                  System.out.println(sum);
+    //                  break;
+    //         case '-':
+    //                  int diff = a-b;
+    //                  System.out.println(diff);
+    //                  break;
+    //         case '/':
+    //                  int div = a/b;
+    //                  System.out.println(div);
+    //                  break;
 
-            case '*':
-                     int mul = a*b;
-                     System.out.println(mul);
-                     break;
-            default :System.out.println("Wrong input");
-        }
+    //         case '*':
+    //                  int mul = a*b;
+    //                  System.out.println(mul);
+    //                  break;
+    //         default :System.out.println("Wrong input");
+    //     }
 
-        System.out.println("Do you want to continue(1) 0r (0)to exit");
-        int choice = sc.nextInt();
-        if(choice ==1){
-            continue;
-        }
-        else if(choice ==0) {
-            break;
-        }
+    //     System.out.println("Do you want to continue(1) 0r (0)to exit");
+    //     int choice = sc.nextInt();
+    //     if(choice ==1){
+    //         //continue break =>loops 
+    //         continue;
+    //     }
+    //     else if(choice ==0) {
+    //         break;
+    //     }
 
-    }
+    // }
         // switch(day-1+2){
         //     case 1:System.out.println("Monday");
         //             break;
