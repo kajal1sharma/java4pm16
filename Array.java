@@ -1,8 +1,26 @@
 class Array{
     public static void main(String[] args) {
         
-        
 
+
+
+        // int arr[] = {23,23,45,76,67,35};// declaration with initialization
+        
+        // for(int i=0 ;i<=5;i=i+1){
+        //     System.out.println(arr[i]);
+        // }
+
+        //Scanner 
+        int arr[] = new int[5];
+        //user
+
+        
+        // System.out.println(arr[0]);
+        // System.out.println(arr[1]);
+        // System.out.println(arr[2]);
+        // System.out.println(arr[3]);
+        // System.out.println(arr[4]);
+        // System.out.println(arr[5]);
 
         // char charr[] = new char[4];
         // double d[]= new double[10];
