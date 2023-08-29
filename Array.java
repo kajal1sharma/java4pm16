@@ -4,6 +4,22 @@ class Array{
     public static void main(String[] args) {
         
 
+        Scanner sc =new Scanner(System.in);
+        int size;
+        System.out.println("Enter the size of array");
+        size=sc.nextInt();
+
+        int arr[]= new int[size];
+
+        for(int i=0;i<size;i=i+1){
+            System.out.println("enter "+(i+1)+"value");
+            arr[i]=sc.nextInt();
+        }
+        int sum=0;
+        for(int i=0;i<size;i=i+1){
+            sum=sum+arr[i];
+        }
+        System.out.println("the sum of all the values is : "+sum);
 
 
         // int arr[] = {23,23,45,76,67,35};// declaration with initialization
@@ -13,14 +29,18 @@ class Array{
         // }
 
         //Scanner 
-        int arr[] = new int[5];
+       
         //arr[0]
         //arr[1]
         //arr[2]
         //arr[3]
         //arr[4]
 
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
+        //  int n;
+        //  System.out.println("Enter the size of array");
+        // n =sc.nextInt();
+        // int arr[] = new int[n];
         // System.out.println("Enter the first value");
         // arr[0]=sc.nextInt();
         // System.out.println("Enter the 2nd value");
@@ -32,14 +52,14 @@ class Array{
         // System.out.println("Enter the 5th value");
         // arr[4]=sc.nextInt();
 
-        for(int i=0;i<=4;i=i+1){
-            System.out.println("enter "+i+" value");
-            arr[i]=sc.nextInt();
-        }
-        //sum of all values 
-        for(int i=0;i<=4;i=i+1){
-            System.out.println(arr[i]);
-        }
+        // for(int i=0;i<=4;i=i+1){
+        //     System.out.println("enter "+i+" value");
+        //     arr[i]=sc.nextInt();
+        // }
+        // //sum of all values 
+        // for(int i=0;i<=4;i=i+1){
+        //     System.out.println(arr[i]);
+        // }
 
 
         //user
