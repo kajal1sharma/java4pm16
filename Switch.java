@@ -2,21 +2,75 @@ import java.util.Scanner;
 
 public class Switch {
     public static void main(String[] args) {
+        
 
+         for(int i=0;i<5;i++){
+
+            //spaces+number =5
+
+            for(int j=i;j<4;j=j+1){
+                System.out.print(" ");
+            }
+           
+            for(int k = 0 ;k<=i;k=k+1){
+                
+                System.out.print(" *");
+             
+            }
+
+
+            System.out.println();
+
+
+        }
+        // int num=0;
+        // for(int i=0;i<5;i++){
+
+        //     //spaces+number =5
+
+        //     for(int j=i;j<4;j=j+1){
+        //         System.out.print(" ");
+        //     }
+           
+        //     for(int k = 0 ;k<=i;k=k+1){
+                
+        //         System.out.print((char)(num+'A'));
+        //         num=num+1;
+        //     }
+
+
+        //     System.out.println();
+
+
+        // }
+
+
+        //first loop for the rows
+
+        // for(int i=0;i<5;i=i+1){
+
+        //     char ch='A';
+
+        //     for(int j =0;j<=i;j=j+1){
+        //         System.out.print((char)(ch+j));
+        //     }
+        //    System.out.println();
+
+        // }
 
 
         //rows first for loop 
 
-        Scanner sc= new Scanner(System.in);
-        int row = sc.nextInt();
-        for(int i=0;i<row;i=i+1){
-//second loop is for star printing
-            for(int j=0;j<=i;j=j+1){
-                System.out.print("*");
-            }
-            System.out.println();
+//         Scanner sc= new Scanner(System.in);
+//         int row = sc.nextInt();
+//         for(int i=0;i<row;i=i+1){
+// //second loop is for star printing
+//             for(int j=0;j<=i;j=j+1){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
 
-        }
+//         }
 
 
         // Scanner sc = new Scanner(System.in);
