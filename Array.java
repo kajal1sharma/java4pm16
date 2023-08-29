@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Array{
     public static void main(String[] args) {
         
@@ -12,6 +14,34 @@ class Array{
 
         //Scanner 
         int arr[] = new int[5];
+        //arr[0]
+        //arr[1]
+        //arr[2]
+        //arr[3]
+        //arr[4]
+
+        Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the first value");
+        // arr[0]=sc.nextInt();
+        // System.out.println("Enter the 2nd value");
+        // arr[1]=sc.nextInt();
+        // System.out.println("Enter the 3rd value");
+        // arr[2]=sc.nextInt();
+        // System.out.println("Enter the 4th value");
+        // arr[3]=sc.nextInt();
+        // System.out.println("Enter the 5th value");
+        // arr[4]=sc.nextInt();
+
+        for(int i=0;i<=4;i=i+1){
+            System.out.println("enter "+i+" value");
+            arr[i]=sc.nextInt();
+        }
+        //sum of all values 
+        for(int i=0;i<=4;i=i+1){
+            System.out.println(arr[i]);
+        }
+
+
         //user
 
         
