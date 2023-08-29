@@ -1,19 +1,27 @@
 class Array{
     public static void main(String[] args) {
         
+        
 
-        int studentMarks[]= new int[5];
-        studentMarks[0]=45;
-        studentMarks[1]=89;
-        studentMarks[2]=90;
-        studentMarks[3]=67;
-        studentMarks[4]=90;
 
-        System.out.println("marks of student 1 : "+studentMarks[0]);
-        System.out.println("Marks of student 2 : "+studentMarks[1]);
-        System.out.println("Marks of student 3 : "+studentMarks[2]);
-         System.out.println("Marks of student 4 : "+studentMarks[3]);
-          System.out.println("Marks of student 5 : "+studentMarks[4]);
+        // char charr[] = new char[4];
+        // double d[]= new double[10];
+        // char []ch2= new char[5];
+        // char[] ch3 =new char[4];
+
+
+        // int studentMarks[]= new int[5];
+        // studentMarks[0]=45;
+        // studentMarks[1]=89;
+        // studentMarks[2]=90;
+        // studentMarks[3]=67;
+        // studentMarks[4]=90;
+
+        // System.out.println("marks of student 1 : "+studentMarks[0]);
+        // System.out.println("Marks of student 2 : "+studentMarks[1]);
+        // System.out.println("Marks of student 3 : "+studentMarks[2]);
+        //  System.out.println("Marks of student 4 : "+studentMarks[3]);
+        //   System.out.println("Marks of student 5 : "+studentMarks[4]);
 
         //collection of same type of data undder one name in contiguous memory location
 
