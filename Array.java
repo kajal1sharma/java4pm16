@@ -4,22 +4,22 @@ class Array{
     public static void main(String[] args) {
         
 
-        Scanner sc =new Scanner(System.in);
-        int size;
-        System.out.println("Enter the size of array");
-        size=sc.nextInt();
+        // Scanner sc =new Scanner(System.in);
+        // int size;
+        // System.out.println("Enter the size of array");
+        // size=sc.nextInt();
 
-        int arr[]= new int[size];
+        // int arr[]= new int[size];
 
-        for(int i=0;i<size;i=i+1){
-            System.out.println("enter "+(i+1)+"value");
-            arr[i]=sc.nextInt();
-        }
-        int sum=0;
-        for(int i=0;i<size;i=i+1){
-            sum=sum+arr[i];
-        }
-        System.out.println("the sum of all the values is : "+sum);
+        // for(int i=0;i<size;i=i+1){
+        //     System.out.println("enter "+(i+1)+"value");
+        //     arr[i]=sc.nextInt();
+        // }
+        // int sum=0;
+        // for(int i=0;i<size;i=i+1){
+        //     sum=sum+arr[i];
+        // }
+        // System.out.println("the sum of all the values is : "+sum);
 
 
         // int arr[] = {23,23,45,76,67,35};// declaration with initialization
