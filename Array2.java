@@ -16,12 +16,21 @@ public class Array2 {
         }
 
 
-        //sum of all the elements
-        int sum=0;
+        //mul of number
+        long multiplication =1;
+
         for(int i=0;i<size;i=i+1){
-            sum= sum+arr[i];
+            multiplication=multiplication*arr[i];
         }
-        System.out.println(sum);
+
+        System.out.println(multiplication);
+
+        //sum of all the elements
+        // int sum=0;
+        // for(int i=0;i<size;i=i+1){
+        //     sum= sum+arr[i];
+        // }
+        // System.out.println(sum);
 
         // for(int  i=0 ;i<size;i=i+1){
         //     System.out.println(arr[i]);
