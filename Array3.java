@@ -5,32 +5,70 @@ public class Array3 {
     public static void main(String[] args) {
 
 
+        int arr1[]={1,2,3,4,5,9,6,7};
+        System.out.println(arr1.length);
+        boolean flag = true;;
+        for(int i=0;i<arr1.length-1;i=i+1){
+            if(arr1[i]<arr1[i+1])
+                {
+                    continue;
+                }  
+            else{
+                flag= false;
+                break;
+                }     
+        
+}
 
+if(flag==true){
+    System.out.println("ascending");
+}
+else{
+    System.out.println("not in ascending");
+}
+
+        int arr2[]={1,3,2,34,6,6,3};
 
     //INPUT  TO BE PROVIDED BY THE USER
         
-        int arr2 [][]=new int [3][3];
-        int arr[][] ;
-        arr = new int[3][3];
-        int arr3[][]={{1,2,3},{3,4,5},{6,7,8}};
+        // char ch='a';
+        // int a;
+        // a=0;
+        //         int arr2 [][]=new int [3][3];
+        // int arr[][] ;
+        // arr = new int[3][3];
+        // int arr3[][]={{1,2,3},{3,4,5},{6,7,8}};
 
 
-        int arr4[][]=new int[3][3];
+        // int arr4[][]=new int[3][3];
 
-        Scanner sc= new Scanner(System.in);
-        for(int i=0;i<3;i=i+1){
-            for(int j=0;j<3;j=j+1){
-                System.out.println("enter element arr["+i+"]["+j+"]");
-                arr[i][j]=sc.nextInt();
-            }
-        }
 
-        for(int i=0;i<3;i=i+1){
-            for(int j=0;j<3;j=j+1){
-                System.out.print(arr[i][j]+" ");
-            }
-            System.out.println();
-        }
+
+        // Scanner sc= new Scanner(System.in);
+        // for(int i=0;i<3;i=i+1){
+        //     for(int j=0;j<3;j=j+1){
+        //         System.out.println("enter element arr["+i+"]["+j+"]");
+        //         arr[i][j]=sc.nextInt();
+        //     }
+        // }
+
+        // for(int i=0;i<3;i=i+1){
+        //     for(int j=0;j<3;j=j+1){
+        //         System.out.print(arr[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int sum=0;
+        // for(int i=0;i<3;i=i+1){
+        //     for(int j=0;j<3;j=j+1){
+        //         if((i+j)>=2){
+        //           sum=sum+arr[i][j];  
+        //         }
+        //     }
+        // }
+        // System.out.println(sum);
+
 
         // int arr[][] = new int[3][3];
         // for(int i=0;i<3;i=i+1){
