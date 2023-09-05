@@ -1,25 +1,54 @@
+
+import java.util.Scanner;
+
 public class Array3 {
     public static void main(String[] args) {
 
 
 
-        int arr[][] = new int[3][3];
+
+    //INPUT  TO BE PROVIDED BY THE USER
+        
+        int arr2 [][]=new int [3][3];
+        int arr[][] ;
+        arr = new int[3][3];
+        int arr3[][]={{1,2,3},{3,4,5},{6,7,8}};
+
+
+        int arr4[][]=new int[3][3];
+
+        Scanner sc= new Scanner(System.in);
         for(int i=0;i<3;i=i+1){
             for(int j=0;j<3;j=j+1){
-                arr[i][j]=i+j;
+                System.out.println("enter element arr["+i+"]["+j+"]");
+                arr[i][j]=sc.nextInt();
             }
         }
 
-        //sum of right diagonal
-        int sum=0;
         for(int i=0;i<3;i=i+1){
             for(int j=0;j<3;j=j+1){
-                if(i==j){
-                    sum=sum+arr[i][j];
-                }
+                System.out.print(arr[i][j]+" ");
             }
+            System.out.println();
         }
-        System.out.println("sum of diagonal = " +sum);
+
+        // int arr[][] = new int[3][3];
+        // for(int i=0;i<3;i=i+1){
+        //     for(int j=0;j<3;j=j+1){
+        //         arr[i][j]=i+j;
+        //     }
+        // }
+
+        //sum of right diagonal
+        // int sum=0;
+        // for(int i=0;i<3;i=i+1){
+        //     for(int j=0;j<3;j=j+1){
+        //         if(i==j){
+        //             sum=sum+arr[i][j];
+        //         }
+        //     }
+        // }
+        // System.out.println("sum of diagonal = " +sum);
         
         // int arr2[][] =new int[4][3];
 
