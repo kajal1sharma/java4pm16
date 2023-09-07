@@ -2,9 +2,9 @@ public class Array5 {
     public static void main(String[] args) {
        //Q1 sort 
        // int arr[] ={1,4,2,6,8,5,3,6}
+       
+       
 
-       
-       
        
         //Q2: 
         //if size of the array is 5 than 1-6 
