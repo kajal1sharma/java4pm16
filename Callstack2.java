@@ -10,19 +10,34 @@ public class Callstack2 {
 
 
 
-    static void printIt(String []temp){
-        for(int i=0;i<temp.length;i=i+1){
-            System.out.println(temp[i]);
+//     static void printIt(String []temp){
+//         for(int i=0;i<temp.length;i=i+1){
+//             System.out.println(temp[i]);
+//         }
+//     }
+
+   
+    static  String isOddEven(int num){
+        String odd="odd";
+        String even ="even";
+        if(num%2==0){
+            return even;
+        }
+        else{
+            return odd;
         }
     }
 
     public static void main(String[] args) {
     
-        String arr[]={"a","b","c","d"};
-        printIt(arr);
-        for(int i=0;i<args.length;i=i+1){
-            System.out.println(args[i]);
-        }
+        String result = isOddEven(46);
+        System.out.println(result);
+
+        // String arr[]={"a","b","c","d"};
+        // printIt(arr);
+        // for(int i=0;i<args.length;i=i+1){
+        //     System.out.println(args[i]);
+        // }
     }
 
 
