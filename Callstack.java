@@ -20,23 +20,25 @@ public class Callstack {
     }
 
 
-    static void Game(String name){
+    
 
-        int result =  (int)(Math.random()*100);
+
+    static void Game(String name){
+        int result = (int)(Math.random()*100);
         if(result%2==0){
-            System.out.println(result+ "   "+name+" has lost the game");
+            System.out.println(result+"  "+name+" has lost the match");
         }
         else{
-            System.out.println(result+ "   "+name+" has won the game");
-            
+            System.out.println(result+"  "+name+" has won the match");
         }
     }
 
     public static void main(String[] args) {
         
-        Game("meena");
-        Game("rita");
-        Game("rahul");
+       
+        Game("reena");
+        Game("mina");
+        Game("RAhul");
         
         //  System.out.println("line 5");
         // doSomething();
