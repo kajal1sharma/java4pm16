@@ -7,7 +7,7 @@ public class MergeSort {
         int arr3[]=  new int[arr1.length + arr2.length];
 
 
-        int i =0;
+        int i=0;
         int j=0;
         int k=0;
 
@@ -28,10 +28,12 @@ public class MergeSort {
         while(i<arr1.length){
             arr3[k]=arr1[i];
             i++;
+            k++;
         }
         while(j<arr2.length){
             arr3[k]=arr2[j];
             j++;
+            k++;
         }
 
 
