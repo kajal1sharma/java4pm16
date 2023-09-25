@@ -1,6 +1,6 @@
 public class ZeroesOne {
     public static void main(String[] args) {
-        int arr[]={0,0,1,1,1,0,1,0,0,0,1,1,1};
+        int arr[]={1,0,0,1,0,1,1,0,0,0,1};
 
 
         int i=0;
@@ -8,14 +8,20 @@ public class ZeroesOne {
 
         for(;;){
 
-            for(;arr[i]==0;i++){
+            // for(;i<arr.length && arr[i]==0;i++){
                 
-            }
+            // }
 
-            while(arr[j]==1){
-                j--;
-            }
+            // while(j>=0 && arr[j]==1){
+            //     j--;
+            // }
 
+                if(arr[i]==0){
+                    i++;
+                }
+                if(arr[j]==1){
+                    j--;
+                }
             if(j<i){
                 break;
             }
