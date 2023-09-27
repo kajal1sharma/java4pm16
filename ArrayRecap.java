@@ -1,26 +1,44 @@
+import java.util.Arrays;
 
 public class ArrayRecap {
     public static void main(String[] args) {
 
+     
+        
+        //Ques => reverse this array
         int arr[] ={ 1,2,0,3,2,4,5,2};
-        //find the element which is repeated most number of times;
-        int max=0;
-        int ele=0;
-        //select each element one by one
-        for(int i=0;i<arr.length;i++){
-            int count=0;
-            int num=arr[i];
-            for(int j=0;j<arr.length;j++){
-                if(arr[j]==num){
-                    count++;
-                }
-            }
-            if(max<count){
-                max=count;
-                ele=num;
-            }
+        Arrays.sort(arr);
+        int i=0;
+        int j=arr.length-1;
+
+        while(i<j){
+            //swapping
+
+            i++;
+            j--;
         }
-System.out.println(ele +" is repeated "+ max +" number of times");
+
+
+
+//         
+//         //find the element which is repeated most number of times;
+//         int max=0;
+//         int ele=0;
+//         //select each element one by one
+//         for(int i=0;i<arr.length;i++){
+//             int count=0;
+//             int num=arr[i];
+//             for(int j=0;j<arr.length;j++){
+//                 if(arr[j]==num){
+//                     count++;
+//                 }
+//             }
+//             if(max<count){
+//                 max=count;
+//                 ele=num;
+//             }
+//         }
+// System.out.println(ele +" is repeated "+ max +" number of times");
         // int arr[] ={2  ,5,1,4,6,3,5}; 
 
         // int max = Integer.MIN_VALUE;
