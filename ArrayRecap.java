@@ -3,20 +3,63 @@ import java.util.Arrays;
 public class ArrayRecap {
     public static void main(String[] args) {
 
+        int arr1[]={4,3,2,7,5,1};
+        int arr2[]={1,3,2,5,4,6};
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+
+        if(arr1.length !=arr2.length){
+            System.out.println("these arrays are not equal");
+        }
+        else{
+            boolean flag=true;
+            for(int i=0 ;i <arr1.length;i++){
+                if(arr1[i]==arr2[i]){
+                    continue;
+                }
+                else
+                {
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag==true){
+                System.out.println("these arrays are equal");
+            }
+            else{
+                System.out.println("these arrays are not equal");
+            }
+
+        }
+
+
+//         for(int i=0;i<arr1.length;i++){
+//             System.out.print(arr1[i]+" ");
+//         }
+// System.out.println();
+//         for(int i=0;i<arr2.length;i++){
+//             System.out.print(arr2[i]+" ");
+//         }
+
+
+        //all the elements of array 1 == array2
+
      
         
         //Ques => reverse this array
-        int arr[] ={ 1,2,0,3,2,4,5,2};
-        Arrays.sort(arr);
-        int i=0;
-        int j=arr.length-1;
+        // int arr[] ={ 1,2,0,3,2,4,5,2};
+        // Arrays.sort(arr);
+        // int i=0;
+        // int j=arr.length-1;
 
-        while(i<j){
+        // while(i<j){
             //swapping
 
-            i++;
-            j--;
-        }
+        //     i++;
+        //     j--;
+        // }
 
 
 
