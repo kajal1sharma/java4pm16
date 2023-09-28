@@ -3,37 +3,67 @@ import java.util.Arrays;
 public class ArrayRecap {
     public static void main(String[] args) {
 
-        int arr1[]={4,3,2,6,5,1};
-        int arr2[]={1,3,2,5,4,6};
 
+        //febonacci series
+        //term1 =0;
+        //term1 =1
+        // 0 1 1 2 3 5 8 13 21 34....
 
-        boolean flag=true;
-        if(arr1.length!=arr2.length){
-            flag=false;
+        int term1=0;
+        int term2 =1;
+        int n=15;
+
+        if(n==1){
+            System.out.println(term1);
+        }
+        else if(n==2){
+            System.out.println(term1);
+            System.out.println(term2);
         }
         else{
-
-            for(int i=0;i<arr1.length;i++){
-                boolean found=false;
-                for(int j=0;j<arr2.length;j++){
-                    if(arr1[i]==arr2[j]){
-                        found=true;
-                        break;
-                    }
-                }
-
-                if(found==false){
-                    flag=false;
-                }
+            System.out.println(term1);
+            System.out.println(term2);
+            for(int i=3;i<=n;i++){
+                int currTerm  = term1+term2;
+                System.out.println(currTerm);
+                term1=term2;
+                term2 = currTerm;
             }
         }
 
-        if(flag==false){
-            System.out.println("array are not equal");
-        }
-        else{
-            System.out.println("arrays are equal0");
-        }
+
+
+        // int arr1[]={4,3,2,6,5,1};
+        // int arr2[]={1,3,2,5,4,6};
+
+
+        // boolean flag=true;
+        // if(arr1.length!=arr2.length){
+        //     flag=false;
+        // }
+        // else{
+
+        //     for(int i=0;i<arr1.length;i++){
+        //         boolean found=false;
+        //         for(int j=0;j<arr2.length;j++){
+        //             if(arr1[i]==arr2[j]){
+        //                 found=true;
+        //                 break;
+        //             }
+        //         }
+
+        //         if(found==false){
+        //             flag=false;
+        //         }
+        //     }
+        // }
+
+        // if(flag==false){
+        //     System.out.println("array are not equal");
+        // }
+        // else{
+        //     System.out.println("arrays are equal0");
+        // }
 
         // Arrays.sort(arr1);
         // Arrays.sort(arr2);
