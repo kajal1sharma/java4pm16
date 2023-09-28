@@ -3,36 +3,66 @@ import java.util.Arrays;
 public class ArrayRecap {
     public static void main(String[] args) {
 
-        int arr1[]={4,3,2,7,5,1};
+        int arr1[]={4,3,2,6,5,1};
         int arr2[]={1,3,2,5,4,6};
 
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
 
-
-        if(arr1.length !=arr2.length){
-            System.out.println("these arrays are not equal");
+        boolean flag=true;
+        if(arr1.length!=arr2.length){
+            flag=false;
         }
         else{
-            boolean flag=true;
-            for(int i=0 ;i <arr1.length;i++){
-                if(arr1[i]==arr2[i]){
-                    continue;
-                }
-                else
-                {
-                    flag=false;
-                    break;
-                }
-            }
-            if(flag==true){
-                System.out.println("these arrays are equal");
-            }
-            else{
-                System.out.println("these arrays are not equal");
-            }
 
+            for(int i=0;i<arr1.length;i++){
+                boolean found=false;
+                for(int j=0;j<arr2.length;j++){
+                    if(arr1[i]==arr2[j]){
+                        found=true;
+                        break;
+                    }
+                }
+
+                if(found==false){
+                    flag=false;
+                }
+            }
         }
+
+        if(flag==false){
+            System.out.println("array are not equal");
+        }
+        else{
+            System.out.println("arrays are equal0");
+        }
+
+        // Arrays.sort(arr1);
+        // Arrays.sort(arr2);
+
+
+        // if(arr1.length !=arr2.length){
+        //     System.out.println("these arrays are not equal");
+        // }
+        // else{
+        //     boolean flag=true;
+        //     for(int i=0 ;i <arr1.length;i++){
+        //         if(arr1[i]==arr2[i]){
+        //             continue;
+        //         }
+        //         else
+        //         {
+        //             flag=false;
+        //             if(flag==true){
+        //                 System.out.println("these arrays are equal");
+        //             }
+        //             else{
+        //                 System.out.println("these arrays are not equal");
+        //             }
+        //             break;
+        //         }
+        //     }
+            
+
+        // }
 
 
 //         for(int i=0;i<arr1.length;i++){
