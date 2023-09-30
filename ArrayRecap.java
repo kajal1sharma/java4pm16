@@ -2,41 +2,91 @@ import java.util.Arrays;
 
 public class ArrayRecap {
 
-    static void febonacciSeries(int n){
+    // static void febonacciSeries(int n){
 
-        if(n==1){
-            System.out.println(0);
-        }
-        else if(n==2){
-            System.out.println(0 +" "+1);
-        }
-        else{
-            int firstTerm  =  0;
-            int secondTerm = 1;
-            System.out.print(firstTerm+ "  "+secondTerm+"  ");
-            int nextTerm;
+    //     if(n==1){
+    //         System.out.println(0);
+    //     }
+    //     else if(n==2){
+    //         System.out.println(0 +" "+1);
+    //     }
+    //     else{
+    //         int firstTerm  =  0;
+    //         int secondTerm = 1;
+    //         System.out.print(firstTerm+ "  "+secondTerm+"  ");
+    //         int nextTerm;
         
-            for(int i=3 ; i <=n ; i++)
-            {
-                nextTerm =firstTerm + secondTerm;
-                System.out.print(nextTerm+"  ");
-                firstTerm = secondTerm;
-                secondTerm=nextTerm;
-            }
+    //         for(int i=3 ; i <=n ; i++)
+    //         {
+    //             nextTerm =firstTerm + secondTerm;
+    //             System.out.print(nextTerm+"  ");
+    //             firstTerm = secondTerm;
+    //             secondTerm=nextTerm;
+    //         }
        
 
+    //     }
+
+
+    //    }
+    static int febonacci(int n){
+
+        if(n==1){
+            return 0;
+        }
+        else if(n==2){
+            return 1;
+        }
+        else{
+            int firstTerm  =0 ;
+            int secondTerm =1;
+
+            int nextTerm=0;
+            for(int i=3 ; i<=n ;i++){
+                nextTerm =firstTerm +secondTerm;
+                firstTerm= secondTerm;
+                secondTerm =nextTerm;
+            }
+            return nextTerm;
+        }
+    }
+
+    static int[] febonacciArr(int n){
+        int arr[] = new int[n];
+
+        if(n==1)
+        {
+            arr[0]=0;
+            return arr;
+        }
+    
+        arr[0]=0;
+        arr[1]=1;
+
+        
+        for(int i=2;i<n;i++){
+        arr[i]=arr[i-1]+arr[i-2];    
         }
 
+        return arr;
 
     }
+    
+
     public static void main(String[] args) {
 
 
+        int n=10;
+        int nthterm[]  = febonacciArr(n);
+
+        for(int i=0;i<nthterm.length;i++){
+            System.out.println(nthterm[i]+" ");
+        }
         //febonacci  series 
         // 0 1 1 2 3  5 8 13 
 
-        int n=18;
-        febonacciSeries(n);
+        // int n=18;
+        // febonacciSeries(n);
 
 
         //febonacci series
