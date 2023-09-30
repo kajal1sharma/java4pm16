@@ -1,7 +1,42 @@
 import java.util.Arrays;
 
 public class ArrayRecap {
+
+    static void febonacciSeries(int n){
+
+        if(n==1){
+            System.out.println(0);
+        }
+        else if(n==2){
+            System.out.println(0 +" "+1);
+        }
+        else{
+            int firstTerm  =  0;
+            int secondTerm = 1;
+            System.out.print(firstTerm+ "  "+secondTerm+"  ");
+            int nextTerm;
+        
+            for(int i=3 ; i <=n ; i++)
+            {
+                nextTerm =firstTerm + secondTerm;
+                System.out.print(nextTerm+"  ");
+                firstTerm = secondTerm;
+                secondTerm=nextTerm;
+            }
+       
+
+        }
+
+
+    }
     public static void main(String[] args) {
+
+
+        //febonacci  series 
+        // 0 1 1 2 3  5 8 13 
+
+        int n=18;
+        febonacciSeries(n);
 
 
         //febonacci series
@@ -9,27 +44,27 @@ public class ArrayRecap {
         //term1 =1
         // 0 1 1 2 3 5 8 13 21 34....
 
-        int term1=0;
-        int term2 =1;
-        int n=15;
+        // int term1=0;
+        // int term2 =1;
+        // int n=15;
 
-        if(n==1){
-            System.out.println(term1);
-        }
-        else if(n==2){
-            System.out.println(term1);
-            System.out.println(term2);
-        }
-        else{
-            System.out.println(term1);
-            System.out.println(term2);
-            for(int i=3;i<=n;i++){
-                int currTerm  = term1+term2;
-                System.out.println(currTerm);
-                term1=term2;
-                term2 = currTerm;
-            }
-        }
+        // if(n==1){
+        //     System.out.println(term1);
+        // }
+        // else if(n==2){
+        //     System.out.println(term1);
+        //     System.out.println(term2);
+        // }
+        // else{
+        //     System.out.println(term1);
+        //     System.out.println(term2);
+        //     for(int i=3;i<=n;i++){
+        //         int currTerm  = term1+term2;
+        //         System.out.println(currTerm);
+        //         term1=term2;
+        //         term2 = currTerm;
+        //     }
+        // }
 
 
 
