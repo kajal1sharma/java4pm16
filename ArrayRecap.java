@@ -76,12 +76,12 @@ public class ArrayRecap {
     public static void main(String[] args) {
 
 
-        int n=10;
-        int nthterm[]  = febonacciArr(n);
+        // int n=10;
+        // int nthterm[]  = febonacciArr(n);
 
-        for(int i=0;i<nthterm.length;i++){
-            System.out.println(nthterm[i]+" ");
-        }
+        // for(int i=0;i<nthterm.length;i++){
+        //     System.out.println(nthterm[i]+" ");
+        // }
         //febonacci  series 
         // 0 1 1 2 3  5 8 13 
 
