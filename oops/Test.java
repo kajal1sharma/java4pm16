@@ -1,8 +1,27 @@
 class Human{
-    String name;
+    // data members or proerties
+    private String name;
     int mobile;
     String address;
+    int pin;
 
+    //getters and setters
+     void  setName(String tname){
+        //conditions
+            name=tname;
+     }
+      String getName(){
+        return name;
+      }
+    //  void setPin(int tpin){
+    //     //validations
+    //     //account verify , 
+    //     if(pin!=0){
+    //         return;
+    //     }
+    //     pin=tpin;
+    //  }
+    //member function, methods 
     void printInfo(){
         System.out.println("name of the human is : "+name);
         System.out.println("Mobile of the human "+ mobile);
@@ -12,18 +31,25 @@ class Human{
 public  class Test {
 
     public static void main(String[] args) {
-        Human h1= new Human();
-        h1.name="kritika";
+        Human h1= new Human();//new keyword is used to create objects
+        // h1.name="kritika";
+        h1.pin=1244;
+        h1.pin=90897;
+        h1.setName("kritika");
         h1.mobile=2938293;
         h1.address="t block new delhi";
- 
-        h1.printInfo();
+        String h1name= h1.getName();
+        System.out.println(h1name);
+        // h1.printInfo();
 
         Human h2= new Human();
-        h2.name="ritu";
+        // h2.name="ritu";
+        h2.setName("ritu");
         h2.mobile=82734762;
         h2.address="q block noida";
-        h2.printInfo();
+        String h2name= h2.getName();
+        System.out.println(h2name);
+        // h2.printInfo();
     }
     // static void printSum (int []num){
     //     int sum=0;
