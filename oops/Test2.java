@@ -35,7 +35,24 @@ class Address{
     }
 }
 
+class Address2{
+    String city;
+    String phone;
+}
 class Student{
+     String name;
+     Address2 ref;
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
