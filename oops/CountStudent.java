@@ -1,6 +1,6 @@
 
 class Student3{
-    static int count;
+    static private int count;
     int rollno;
     String name;
 
@@ -17,6 +17,8 @@ public class CountStudent {
 
         for(int i=0;i<5;i++){
             arr[i]=new Student3();
+            arr[i].incrementCount();
+           //Student3.count=Student3.count+7;
         }
 
         // Student3 obj1=new Student3();
