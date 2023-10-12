@@ -4,10 +4,21 @@ class Student3{
     int rollno;
     String name;
 
-    int incrementCount(){
+
+
+    //constructor function => shares the name of class name
+    Student3(){
         count++;
+    }
+
+    static int getCount(){
         return count;
     }
+
+    // int incrementCount(){
+    //     count++;
+    //     return count;
+    // }
 }
 
 public class CountStudent {
@@ -16,11 +27,15 @@ public class CountStudent {
         Student3[] arr =new Student3[5];
 
         for(int i=0;i<5;i++){
+        
+            Student3 obj = new Student3();
+
             arr[i]=new Student3();
-            arr[i].incrementCount();
+            // arr[i].incrementCount();
            //Student3.count=Student3.count+7;
         }
-
+        Student3 obj=new Student3();
+        System.out.println(Student3.getCount());
         // Student3 obj1=new Student3();
         // obj1.incrementCount();
         // Student3 obj2=new Student3();
