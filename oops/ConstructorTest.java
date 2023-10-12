@@ -17,11 +17,11 @@ class Car{
         window=carwindow;
         color=carcolor;
     }
-     Car(int carwindow2,String carcolor2,  int cartyre2){
-        Tyre=cartyre2;
-        window=carwindow2;
-        color=carcolor2;
-    }
+    //  Car(int carwindow2,String carcolor2,  int cartyre2){
+    //     Tyre=cartyre2;
+    //     window=carwindow2;
+    //     color=carcolor2;
+    // }
 }
 
 public class ConstructorTest {
