@@ -8,6 +8,7 @@ class Car{
         color="white";
         System.out.println("Now the constructor function is running");
     }
+    
     //parameterized constructor
     Car(String carcolor){
         color=carcolor;
