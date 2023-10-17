@@ -3,7 +3,18 @@ public class TwoDArray {
         
         
 
-          int [][][] arr = {{{1,2,3},{2,3,4},{4,5,6}},{{1,2,3},{7,8,9},{5,6,7}},{{2,3,4},{4,5,6},{3,4,5}}};
+          int [][][] arr = {{{1,2,3,4},{2,3},{4,9,3,5,6}},{{1,2,3},{7,8,4,9},{4,5,6,7}},{{4,2,3,4},{7,4,5,6},{3,4,5}}};
+      
+          int sum=0;
+
+          for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+               for(int k=0;k<arr[i][j].length;k++){
+                  sum=sum+arr[i][j][k];
+               }
+            }
+          }
+          System.out.println(sum);
 
           // int arr[][] = new int[4][];
 
