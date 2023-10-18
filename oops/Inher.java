@@ -27,7 +27,10 @@ class Teacher extends Person{
     int sub3;
 
     void printInfo2(){
-        
+         System.out.println(name);
+        System.out.println(address);
+        System.out.println(mothersname);
+        System.out.println(FathersName);
         System.out.println(salary);
         System.out.println(phone);
         
