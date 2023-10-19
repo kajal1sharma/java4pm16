@@ -1,1 +1,13 @@
-Write a program to print the area of a rectangle by creating a class named 'Area' having two methods. First method named as 'setDim' takes length and breadth of rectangle as parameters and the second method named as 'getArea' returns the area of the rectangle. Length and breadth of rectangle are entered through keyboard.
+Q1: Write a program to print the area of a rectangle by creating 
+a class named 'Area' having two methods. First method named as 'setDim' takes 
+length and breadth of rectangle as parameters and the second method named as
+ 'getArea' returns the area of the rectangle. 
+Length and breadth of rectangle are entered through keyboard.
+
+
+
+Q2:Write a program by creating an 'Employee' class having the following methods and print the final salary.
+0.constructor => empty, constructor(salary, hours)
+1 - 'getInfo()' which prints the salary, number of hours of work per day of employee as parameter
+2 - 'AddSal()' which adds $10 to salary of the employee if it is less than $500.
+3 - 'AddWork()' which adds $5 to salary of employee if the number of hours of work per day is more than 6 hours.

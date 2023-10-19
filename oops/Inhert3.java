@@ -75,5 +75,6 @@ public class Inhert3 {
     static public void main(String args[]){
         Student s= new Student();
         Student s2=new Student(100, 5);
+        
     }
 }
