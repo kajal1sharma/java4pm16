@@ -3,12 +3,15 @@ class Employee{
     private int salary;
     private int hours;
 
-    Employee(){
+    private boolean inc;
 
+    Employee(){
+        this.inc=false;
     }
     Employee(int salary, int hours){
         this.salary=salary;
         this.hours=hours;
+        this.inc=false;
     }
 
     void getInfo(){
@@ -19,12 +22,15 @@ class Employee{
     }
 
     void addSal(){
-        if(this.salary<500){
+        if(this.salary<500 && inc==false){
+            this.inc=true;
             this.salary=this.salary+10;
         }
     }
     void addWork(){
-        if(this.hours>6){
+        
+        if(this.hours>6 && this.inc==false){
+            this.inc=true;
             this.salary=this.salary+5;
         }
     }
@@ -35,6 +41,14 @@ class Employee{
 class EmployeeEx{
     public static void main(String[] args) {
         
-        Employee em= new Employee(500, 10);
+        Employee em= new Employee(400, 10);
+        em.addSal();
+        em.addWork();
+        em.addWork();
+        em.addWork();
+        em.addSal();
+
+
+        em.getInfo();
     }
 }
