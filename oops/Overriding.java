@@ -25,10 +25,15 @@ class Child2 extends Base{
 
 public class Overriding {
     public static void main(String[] args) {
-        Base b= new Base(10);
+        Base b= new  Base(10);
         b.getInfo();
+        Base b2 = new Child2(20, 30);
+        b2.getInfo();
+        
+        // Base b= new Base(10);
+        // b.getInfo();
 
-        Child2 c= new Child2(20,30);
-        c.getInfo();
+        // Child2 c= new Child2(20,30);
+        // c.getInfo();
     }    
 }
