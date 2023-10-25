@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item-a {
+            grid-area: header;
+            height:100px;
+            background-color: aqua;
+        }
+        .item-b {
+            grid-area: main;
+            height:100px;
+            background-color: pink;
+        }
+        .item-c {
+            grid-area: sidebar1;
+            height:200px;
+            background-color: red;
+        }
+        .item-d {
+            grid-area: footer;
+            height:100px;
+            background-color: blue;
+        }
+
+        .container {
+        border:5px solid black;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header sidebar1"
+            "main main . sidebar2"
+            "footer footer footer footer";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-a"></div>
+        <div class="item-b"></div>
+        <div class="item-c"></div>
+        <div class="item-d"></div>
+    </div>   
+</body>
+</html>
