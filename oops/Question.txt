@@ -11,3 +11,25 @@ Q2:Write a program by creating an 'Employee' class having the following methods 
 1 - 'getInfo()' which prints the salary, number of hours of work per day of employee
 2 - 'AddSal()' which adds $10 to salary of the employee if it is less than $500.
 3 - 'AddWork()' which adds $5 to salary of employee if the number of hours of work per day is more than 6 hours.
+
+
+
+Q3: Suppose you have a class called shape 
+Shape will have some methods such as getArea and getParam. So override these two functions
+in the child classes.
+then there are classes called circle, square and rectangle that inherit the class shape 
+//all classes should getters setters
+Circle class will have raidius property and one default constructor and param constructor
+Squara class will have length property and one def and para constructor
+REctangle class will have length width and one def and para constructor
+
+Test Case 
+=> Circle c= new Circle()//5 should be initialized to radius if def cons is used 
+   Circle c= new Circle(23);
+
+=> Square s = new Square()//5
+   Square s= new Square(2432);
+
+=>Rectangle r= new Rectangle()// 5 5
+  Rectangle r= new Rectangle(23,34)
+

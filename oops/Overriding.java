@@ -33,11 +33,24 @@ class Child2 extends Base{
 public class Overriding {
     public static void main(String[] args) {
 
+        //class => properties methods
+        //parent class of every class => Object
+        //Object => Base => Child2
+
+        Object c= new Object();
+        Base b= new Base(10);
+        System.out.println(b.toString());
+      //  String s= b.getClass().getName();
+        // System.out.println(b.getClass().getName()+"@"+Integer.toHexString(b.hashCode()));
+        // System.out.println(s);
+
+
         //Object
-        Object obj = new Base(10);
-        Base b = new Base(0);
-        String s= b.toString();
-        System.out.println(s);
+        // Object obj = new Base(10);
+        // Base d= (Base)obj;
+        // Base b = new Base(0);
+        // String s= b.toString();
+        // System.out.println(s);
 
         // Child2 c= new Child2(20, 30);
         // Child2 c2 = (Child2)(new Base(30));
