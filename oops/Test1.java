@@ -1,7 +1,10 @@
-class Shape{
-    public double getArea(){
-        return 0;
-    }
+abstract class Shape{
+    // public double getArea(){
+    //     return 0;
+    // }
+
+    abstract public double getArea();
+
 
     public double getParameter(){
         return 0;
@@ -100,6 +103,12 @@ class Rectangle extends Shape{
 
 public class Test1 {
     public static void main(String[] args) {
+        // Rectangle obj = new Rectangle();
+        // obj.setLength(10);
+        // obj.setBreadth(45);
+
+        // Shape s = new Shape();
+
         Square sc= new Square();
         System.out.println("area of square  = "+ sc.getArea());
         System.out.println("param of square = " +sc.getParameter());
