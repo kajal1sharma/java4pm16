@@ -30,13 +30,19 @@ class Phone{
         this.model = model;
     }
     public void setRam(int ram) {
-        this.ram = ram;
+        if(ram <=0){
+
+        }
+        else{
+            this.ram = ram;
+        }
+        
     }
     public int getCamera() {
         return camera;
     }
     public String getColor() {
-        return color;
+        return color+" color";
     }
     public int getCost() {
         return cost;
@@ -52,15 +58,26 @@ class Phone{
 }
 
 class Phone2 extends Phone{
+    Phone2(){
+        
+    }
     Phone2(int model, String color, int ram, int camera, int cost){
-         super(model, color, ram, camera,cost);
+        //super();
+          super(model, color, ram, camera,cost);
         // this.color=color;
     }
 }
 
+class Phone3 extends Phone2{
+
+}
+
 public class Revision {
     public static void main(String[] args) {
+
         Phone p1= new Phone(123, "white", 4, 16, 8000);    
+        // p1.ram=-20;
+        p1.setRam(-20);
         Phone p2= new Phone(128, "white", 4, 16, 8000); 
         Phone p3= new Phone(178, "golden", 16, 32, 18000);         
         Phone2 p4 = new Phone2(156,"white", 86, 67, 90000);
