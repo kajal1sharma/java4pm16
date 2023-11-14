@@ -2,6 +2,7 @@
 //all the function are by default => public abstract
 //all the data members are final static public
 interface Phone{
+   
     String companyName="Nokia";
     String branch ="new delhi";
     void get();
@@ -19,6 +20,10 @@ interface Phone2 {
 //multiple inheritence
 class Abc implements Phone, Phone2{
     
+    Abc(){
+        super();//Object Class const
+        System.out.println(super.toString());
+    }
     public void get() {
         // TODO Auto-generated method stub
         
@@ -43,7 +48,7 @@ class Abc implements Phone, Phone2{
 
 public class Revision2 {
     public static void main(String[] args) {
-     
+        Abc obj = new Abc();
         System.out.println(Phone.companyName);
         System.out.println(Abc.companyName);
     }
