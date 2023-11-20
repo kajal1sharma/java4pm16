@@ -1,3 +1,7 @@
+class  Student{
+    int a;
+
+}
 class Car{
     byte a;
     int b;
@@ -5,7 +9,7 @@ class Car{
     long d;
     boolean f;
     String s;
-
+    Student st;
     // public int getA() {
     //     return a;
     // }
