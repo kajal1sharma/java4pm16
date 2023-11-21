@@ -1,10 +1,10 @@
 class Customer{
 
     int id;
-    String name;
+    Scanner name;
     char gender;
 
-    Customer(int id , String name, char gender){
+    Customer(int id , Scanner name, char gender){
         this.name=name;
         this.id=id;
         this.gender=gender;
@@ -12,14 +12,14 @@ class Customer{
     public int getId() {
         return id;
     }
-    public String getName() {
+    public Scanner getName() {
         return name;
     }
     public char getGender() {
         return gender;
     }
-    public String toString(){
-        String s = this.name+"("+id+")";
+    public Scanner toString(){
+        Scanner s = this.name+"("+id+")";
         return s;
     }
 }
