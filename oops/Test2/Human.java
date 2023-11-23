@@ -1,7 +1,7 @@
  class Human {
-
+// default
     int head;
-    int leg;
+    private int leg;
     int hand;
     int organ;
 

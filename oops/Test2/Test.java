@@ -1,15 +1,33 @@
 import utility.Car;
-class Test {
+class Test  {
 
+    // visibility public > protected > default > private
     // public static void main(int a){
 
     // }
+    int x;
+    int y;
+    Test(){
+        // super(2,2,2,2);
+    }
+    void printInTest(){
+        System.out.println(x);
+        // System.out.println(doors);
+        // System.out.println(wheel);
+        // System.out.println(head);
+        // System.out.println(leg);
+    }
     public static void main(String[] args) {
-        Human h= new Human(1, 2, 2, 5);
-        h.printInfo();
-
-        Car c = new Car();
-        Car c2= new Car(4,4);
-        c.run();
+        Car obj = new Car(12,45);
+        obj.wheel=90;
+        obj.doors=80;
     }    
 }
+
+
+
+
+
+
+
+

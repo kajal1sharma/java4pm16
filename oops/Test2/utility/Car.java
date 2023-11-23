@@ -1,9 +1,9 @@
 package utility;
 
- public class Car {
-    int wheel;
-    int doors;
-    public Car(){
+  public class Car {
+    protected int wheel;
+    public int doors;
+    protected Car(){
 
     }
     public Car(int wheel, int doors){
