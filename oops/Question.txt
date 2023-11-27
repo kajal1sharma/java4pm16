@@ -49,3 +49,22 @@ Test Case
   "Matrices cannot be added" will be displayed.
   5 - multiplying the two matrices
 
+Q Write a program that has variables to store Car data like; CarModel, CarName, CarPriceand CarOwner. The program should include functions to assign user defined values tothe above mentioned variable and a display function to show the values. Write a main
+that   calls   these   functions.  Now   write   another   runner   class   that   declares   three   Carobjects and displays the data of all three
+
+Q A Student is an object in a university management System. Analyze the concept andidentify the data members   that   a   Student   class   should   have.   Also   analyze   thebehavior   of  student  in   a   university management System and identify the methodsthat should be included in Student class. 
+
+Q8. Create a class  circle class with  radius as data member. Create two constructors  (noargument, and two arguments) and a method to calculate Circumference.
+
+Q9 Create   a    class    Account    class     with     balance     as     data    member.    Create     twoconstructors  (no argument, and two arguments) and methods to withdraw and depositbalance.  Create a class “Distance” with two constructors (no argument, and two argument), twodata Create a class “Distance” with two constructors (no argument, and two argument), twodata
+
+
+
+
+Q Constructor(s) that set all of the instance variables. 
+  Public methods to get and set the instance variables. 
+  A public method named calcCost( ) that returns a double that is the cost of the pizza.Pizza cost is determined by: Small: $10 + $2 per topping Medium: $12 + $2 per topping Large: $14 + $2 per topping  
+   public method named getDescription( ) that returns a String containing the pizza size, quantity of each topping.   
+Write test code to create several pizzas and output their descriptions. For example, alarge pizza with one cheese, one pepperoni and two ham toppings should cost a total of$22. 
+Now Create a PizzaOrder class that allows up to three pizzas to be saved in an order.Each pizza saved should be a Pizza object. 
+Create a method  calcTotal() that returns thecost of  order. In the runner order two pizzas and return the total cost.
