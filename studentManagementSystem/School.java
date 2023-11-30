@@ -16,6 +16,9 @@ public class School {
             this.arr[count]=st;
             count++;
         }
+        else{
+            System.out.println("Sorry you are not admitted");
+        }
     }
 
     void getListOfStudents(){
