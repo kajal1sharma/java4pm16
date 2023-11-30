@@ -2,6 +2,10 @@ public class Address {
     private String city;
     private int pincode;
 
+    Address(String city, int pincode){
+        this.city=city;
+        this.pincode =pincode;
+    }
     public void setCity(String city) {
         this.city = city;
     }

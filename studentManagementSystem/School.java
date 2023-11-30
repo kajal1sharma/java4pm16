@@ -19,8 +19,9 @@ public class School {
     }
 
     void getListOfStudents(){
+         System.out.println("iniversity Rollno\tName\tEmail\tTotal Marks\tCity\tPincode");
         for(int i=0;i<count;i++){
-            System.out.println(arr[i].getUnivRoll()+"\t"+arr[i].getName()+"\t"+arr[i].getEmail()+"\t"+arr[i].getMarks().getTotalMarks());
+            System.out.println(arr[i].getUnivRoll()+"\t"+arr[i].getName()+"\t"+arr[i].getEmail()+"\t"+arr[i].getMarks().getTotalMarks()+"\t"+arr[i].getAdd().getCity()+"\t"+arr[i].getAdd().getPincode());
         }
     }
 
@@ -29,7 +30,7 @@ public class School {
         for(int i=0 ;i<count;i++){
             if(arr[i].getUnivRoll().equals(roll)){
                 int ch;
-                System.out.println("Enter \n1:name\n2.email\n3.marks");
+                System.out.println("Enter \n1:name\n2.email\n3.marks\n4.Address");
                 ch = sc.nextInt();
                 if(ch==1){
                     System.out.println("enter your name");
@@ -54,6 +55,21 @@ public class School {
                     System.out.println("subject 5");
                     int subject5 = sc.nextInt();
                     arr[i].setMarks(subject1, subject2, subject3, subject4, subject5);   
+                }
+                else if(ch==4){
+                    int choice=0;
+                    System.out.println("what do you want to edit\n1.city\n2.Pincode");
+                    choice = sc.nextInt();
+                    if(choice==1){
+                        System.out.println("enter your city name");
+                        String city = sc.next();
+                        arr[i].getAdd().setCity(city);
+                    }
+                    else if(choice ==2){
+                        System.out.println("enter the pincode");
+                        int pincode = sc.nextInt();
+                        arr[i].getAdd().setPincode(pincode);
+                    }
                 }
             }
         }

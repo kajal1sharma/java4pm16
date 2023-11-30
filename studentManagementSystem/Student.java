@@ -8,10 +8,12 @@ class Student{
     private Marks marks;
 
     Student(){
+        this.add = new Address(null, 0);
         marks=new Marks(0, 0, 0, 0, 0);
     }
 
     Student(String name){
+          this.add = new Address(null, 0);
          marks=new Marks(0, 0, 0, 0, 0);
         this.name=name;
     }
